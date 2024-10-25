@@ -1,0 +1,23 @@
+[
+    {
+      "question": "What is the square root of 64?",
+      "options": ["6", "7", "8", "9"],
+      "answer": "8"
+    },
+    {
+      "question": "What is the capital city of Sri Lanka?",
+      "options": ["Colombo", "Kandy", "Galle", "Jaffna"],
+      "answer": "Sri Jayawardenepura Kotte"
+    },
+    {
+      "question": "Which famous Sri Lankan tea is known worldwide?",
+      "options": ["Green Tea", "Black Tea", "Ceylon Tea", "Herbal Tea"],
+      "answer": "Ceylon Tea"
+    },
+    {
+      "question": "What is the official currency of Sri Lanka?",
+      "options": ["Dollar", "Euro", "Rupee", "Pound"],
+      "answer": "Rupee"
+    }
+  ]
+  

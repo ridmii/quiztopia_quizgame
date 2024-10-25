@@ -1,0 +1,106 @@
+/* GameBoard.css */
+
+.game-board {
+  position: relative;
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Hide overflow */
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center; /* Center the content vertically */
+  margin: 0; /* Remove default margin */
+}
+
+.background-video {
+  position: absolute;
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the entire area */
+  z-index: 1; /* Ensure it's behind the overlay */
+}
+
+.overlay {
+  position: relative;
+  z-index: 2; /* Ensure it's above the video */
+  color: white; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Add some padding */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.timer {
+  font-size: 1.5em; /* Adjust font size */
+  color: #ffcc00; /* Yellow color for visibility */
+  margin: 10px 0; /* Space around timer */
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.option-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.option-button.selected {
+  background-color: #45a049; /* Darker Green */
+}
+
+.option-button:hover {
+  background-color: #45a049; /* Darker Green on hover */
+}
+
+.correct {
+  background-color: #005700; /* Dark green for correct answer */
+  color: white;
+}
+
+.wrong {
+  background-color: #ff4d4d; /* Red for wrong answer */
+  color: white;
+}
+
+.feedback {
+  font-size: 1.2em;
+  color: green; /* Change color based on feedback */
+  margin-top: 10px; /* Space above feedback */
+  text-align: center; /* Center align feedback */
+}
+
+.celebration {
+  font-size: 3em; /* Larger size for celebration */
+  text-align: center;
+  animation: bounce 1s infinite; /* Simple bounce animation */
+  margin-top: 20px; /* Space above the celebration */
+}
+
+.sad-face {
+  font-size: 48px; /* Adjust size as needed */
+  margin-top: 20px;
+  color: red; /* Emphasis color for sad face */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); /* Original position */
+  }
+  40% {
+    transform: translateY(-20px); /* Move up */
+  }
+  60% {
+    transform: translateY(-10px); /* Slightly move down */
+  }
+}
